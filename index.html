@@ -146,7 +146,7 @@
         </div>
         <!-- main Nav bar  -->
         <div class="main_nav">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <nav class="navbar navbar-expand-lg p-3">
             <div class="container-fluid">
               <!-- logo  -->
               <a class="navbar-brand" href="#">
@@ -172,8 +172,30 @@
                       >Home</a
                     >
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                  
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Page
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
                   </li>
                   <li class="nav-item dropdown">
                     <a
@@ -184,7 +206,31 @@
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      Dropdown
+                      Post
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Lifestyle
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <li><a class="dropdown-item" href="#">Action</a></li>
@@ -200,26 +246,57 @@
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link disabled"
-                      href="#"
-                      tabindex="-1"
-                      aria-disabled="true"
-                      >Disabled</a
-                    >
+                    <a class="nav-link" href="#">Dashboard</a>
                   </li>
                 </ul>
-                <form class="d-flex">
-                  <input
-                    class="form-control me-2"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search"
-                  />
-                  <button class="btn btn-outline-success" type="submit">
-                    Search
-                  </button>
-                </form>
+                <!-- right sub and secarch icon  -->
+                <div class="sub_search_btn">
+                  <button class="btn btn-danger">Subscribe</button>
+                   
+                  <span><!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <i class="fas fa-search "></i>
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title text-info" id="exampleModalLabel">Search What you want</h5>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                              <i class="fas fa-times"></i>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <form class="d-flex" role="search">
+                              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                              <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                      
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-info text-white" data-bs-dismiss="modal">Close</button> 
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    </span>
+                    <span><i class="fas fa-bars"></i></span>
+                    <span>
+                      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Enable both scrolling & backdrop</button>
+
+                          <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                            <div class="offcanvas-header">
+                              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                              <p>Try scrolling the rest of the page to see this option in action.</p>
+                            </div>
+                          </div>
+                    </span>
+                </div>
               </div>
             </div>
           </nav>

@@ -7,3 +7,11 @@
 .fill-warning {
   fill: #f7c32e !important;
 }
+.tranding_corusole_icon_left{
+  left: 90% !important;
+  width: 3%;
+}
+.tranding_corusole_icon_right{
+  width: 3%;
+  right: 5%;
+}

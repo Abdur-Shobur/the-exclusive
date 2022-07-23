@@ -7,11 +7,20 @@
 .fill-warning {
   fill: #f7c32e !important;
 }
-.tranding_corusole_icon_left{
-  left: 90% !important;
-  width: 3%;
+.tranding_corusole_icon_left {
+  left: 89% !important;
+  width: 30px;
+  padding: 5px;
+  height: 30px;
+  top: 15%;
 }
-.tranding_corusole_icon_right{
-  width: 3%;
+.tranding_corusole_icon_right {
+  width: 30px;
+  padding: 5px;
+  height: 30px;
   right: 5%;
+  top: 15%;
+}
+.bg-primary-soft {
+  background-color: rgba(33, 99, 232, 0.1) !important;
 }
